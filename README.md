@@ -10,30 +10,9 @@ This repository contains a dockerized comprehensive wrapper for ORB-SLAM3 on ROS
 
 ## 1. Clone this repository
 
-1. ```git clone https://github.com/suchetanrs/ORB-SLAM3-ROS2-Docker```
-2. ```cd ORB-SLAM3-ROS2-Docker```
-3. ```git submodule update --init --recursive --remote```
+1. ```git clone https://github.com/stanislawix/ORB-SLAM3-ROS2-NonDocker```
+2. ```cd ORB-SLAM3-ROS2-NonDocker```
 
-## 2. Install Docker on your system
-
-```bash
-cd ORB-SLAM3-ROS2-Docker
-sudo chmod +x container_root/shell_scripts/docker_install.sh
-./container_root/shell_scripts/docker_install.sh
-```
-
-## 3. Build the image with ORB_SLAM3
-
-1. Build the image: ```sudo docker build -t orb-slam3-humble:22.04 .```
-2. Add ```xhost +``` to your ```.bashrc``` to support correct x11-forwarding using ```echo "xhost +" >> ~/.bashrc```
-3. ```source ~/.bashrc```
-4. You can see the built images on your machine by running ```sudo docker images```.
-
-## 4. Running the container
-
-1. ```cd ORB-SLAM3-ROS2-Docker``` (ignore if you are already in the folder)
-2. ```sudo docker compose run orb_slam3_22_humble```
-3. This should take you inside the container. Once you are inside, run the command ```xeyes``` and a pair of eyes should pop-up. If they do, x11 forwarding has correctly been setup on your computer.
 
 ## 5. Building the ORB-SLAM3 Wrapper
 
